@@ -13,7 +13,7 @@
 	画圆弧:圆心x坐标,圆心y坐标,圆的半径,弧的起点角度,扇形的角度
 ### 返回路径字符串例子
 	pendown|penup|moveto:12.0000,22.0000|lineto:42.0000,62.0000|anglearc:12.0000,12.0000,25.0000,45.0000,45.0000
-## c++ 测试
+## c++ 代码
 ```c++
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -43,7 +43,7 @@ int _tmain(int argc, _TCHAR* argv[])
 }
 ```
 ###  代码打包后制作了一个dll
-## c#  调用 dll 
+## c#  调用 dll 代码
 ```c#
 //引用
 [DllImport("ShxPatch.dll", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.StdCall)]
