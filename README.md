@@ -47,7 +47,6 @@ if (big5.Length > 1)
 }
 //获得路径
 IntPtr ipt = GetPatch("HT.SHX", code, 0, 0, 1, 1);
-string res = Marshal.PtrToStringAnsi(ipt);
 ```
 
 ## GetPatch 路径函数说明	
@@ -57,3 +56,7 @@ string res = Marshal.PtrToStringAnsi(ipt);
 * orgX y坐标偏移量
 * scX x方向缩放大小
 * scY y方向缩放大小
+
+## 注意
+* code 字符编码根据中文和英文不同，如'A'为 65 0x41,'好'为 50106 0xBAC3
+* shx字体文件不包含此字符编码时，返回路径为长度为0字符串
