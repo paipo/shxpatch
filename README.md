@@ -32,7 +32,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 ```
-
+###  代码打包后制作了一个dll
 ## c#  调用 dll 
 ```c#
 [DllImport("ShxPatch.dll", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.StdCall)]
@@ -58,5 +58,5 @@ IntPtr ipt = GetPatch("HT.SHX", code, 0, 0, 1, 1);
 * scY y方向缩放大小
 
 ## 注意
-* code 字符编码根 英文例 'A'为 65 0x41, 中文例 '好'为 50106 0xBAC3
+* code 字符编码 英文例 'A'为 65 0x41, 中文例 '好'为 50106 0xBAC3
 * shx字体文件不包含此字符编码时，返回路径为长度为0字符串
