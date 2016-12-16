@@ -1,4 +1,4 @@
-# ZYshxpatch
+# shxpatch
 识别shx字体，返回路径，可以供二次开发代码使用，如：绘制路径，按shx字体显示文字等。
 ## 路径与数值定义
 ### pendown 
